@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>decent.design</title>
+<meta name="description" content="Decent Design was conceived as a hub for reviewing decentralized applications and for discussing the user experience of cryptocurrency ecosystems. We are currently offline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Caveat:wght@500;600&display=swap">
+<style>
+  :root {
+    --desk: #1B1C20;
+    --paper: #FBFAF4;
+    --greenbar: #E1EDDE;
+    --ink: #26252A;
+    --pen: #2558B8;
+    --perf: #B7B4A6;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--desk); }
+
+  /* the desk */
+  .desk {
+    min-height: 100vh;
+    padding: clamp(16px, 4vw, 56px) clamp(12px, 3vw, 24px) 0;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    color: var(--ink);
+    display: flex; flex-direction: column; align-items: center;
+  }
+
+  /* the continuous-form sheet */
+  .sheet {
+    position: relative; width: 100%; max-width: 880px;
+    padding: clamp(28px, 4vw, 48px) clamp(44px, 9vw, 104px) clamp(24px, 3.5vw, 40px);
+    background: repeating-linear-gradient(to bottom, var(--paper) 0 72px, var(--greenbar) 72px 144px);
+    font-size: clamp(13px, 1.4vw, 16px); line-height: 24px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+  }
+  .tractor {
+    position: absolute; top: 0; bottom: 0; width: clamp(28px, 4.5vw, 48px);
+    background-image: radial-gradient(circle, var(--desk) 0 5px, transparent 5.5px);
+    background-size: 100% 36px; background-position: center 6px;
+  }
+  .tractor.left { left: 0; border-right: 2px dashed var(--perf); }
+  .tractor.right { right: 0; border-left: 2px dashed var(--perf); }
+
+  .stack { display: flex; flex-direction: column; gap: clamp(20px, 3vw, 28px); }
+  .printhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-weight: 600; letter-spacing: 0.1em; }
+  .rule { border-top: 3px dotted var(--ink); margin-top: -8px; }
+
+  .hero { display: flex; flex-wrap: wrap; gap: 24px 32px; align-items: flex-start; }
+  .hero-text { flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+  h1 { margin: 0; font-weight: 400; }
+  .banner { margin: 0; font-family: inherit; font-weight: 600; font-size: clamp(10px, 1.45vw, 17px); line-height: 1.05; color: var(--ink); }
+  .blurb { margin: 0; max-width: 507px; }
+  .offline { text-decoration: underline wavy var(--pen); text-decoration-thickness: 1.5px; text-underline-offset: 5px; text-decoration-skip-ink: none; }
+  .sketch { flex: 1 1 240px; min-width: 0; margin: 0; }
+  .sketch svg { display: block; margin: 0 auto; width: min(257px, 100%); height: auto; mix-blend-mode: multiply; }
+
+  .subscribe { display: flex; flex-wrap: wrap; gap: 0 10px; align-items: center; margin-top: 12px; }
+  .leader { flex: 1 1 24px; border-bottom: 3px dotted var(--ink); }
+  .subscribe a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+
+  .tear { border-top: 2px dashed var(--ink); margin-top: 8px; }
+
+  footer { margin-top: -16px; font-family: 'Caveat', cursive; font-size: 18px; letter-spacing: 0.08em; color: var(--pen); }
+  footer a { display: inline-flex; align-items: center; min-height: 44px; color: var(--pen); font-weight: 600; text-underline-offset: 4px; }
+  footer .credit { display: inline-flex; flex-wrap: wrap; align-items: center; column-gap: 0.6em; }
+  footer .year { white-space: nowrap; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="desk">
+  <main class="sheet">
+    <div class="tractor left" aria-hidden="true"></div>
+    <div class="tractor right" aria-hidden="true"></div>
+
+    <div class="stack">
+      <div class="printhead"><span>DECENT.DESIGN</span><span>PAGE 001</span></div>
+      <div class="rule" aria-hidden="true"></div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h1>
+            <span class="sr-only">decent.design</span>
+<pre class="banner" aria-hidden="true">    d                           t
+    d                           t
+ dddd  eee   cccc  eee  nnnn  ttttt
+d   d e   e c     e   e n   n   t
+d   d eeeee c     eeeee n   n   t
+d   d e     c     e     n   n   t
+ dddd  eeee  cccc  eeee n   n    tt
+
+       d               i
+       d
+    dddd  eee   ssss  ii    gggg nnnn
+   d   d e   e s       i   g   g n   n
+   d   d eeeee  sss    i   g   g n   n
+.. d   d e         s   i   g   g n   n
+..  dddd  eeee ssss   iii   gggg n   n
+                               g
+                           gggg</pre>
+          </h1>
+          <p class="blurb">Decent Design was conceived as a hub for reviewing decentralized applications and for discussing the user experience of cryptocurrency ecosystems. <span class="offline">We are currently offline.</span></p>
+        </div>
+        <figure class="sketch">
+          <svg id="net" aria-hidden="true" viewBox="0 0 420 680"></svg>
+        </figure>
+      </section>
+
+      <div class="subscribe">
+        <span>To be notified when we're back online</span>
+        <span class="leader" aria-hidden="true"></span>
+        <a href="https://substack.com/@elleobi" target="_blank" rel="noopener noreferrer">SUBSCRIBE ↗</a>
+      </div>
+
+      <div class="tear" aria-hidden="true"></div>
+
+      <footer>
+        <span class="credit"><span>FILED BY <a href="https://elleobi.xyz" target="_blank" rel="noopener noreferrer">OBI ELLEDGE ↗</a></span><span class="year">©&nbsp;2026</span></span>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<script>
+/* ---------------------------------------------------------------
+   Network sketch
+   Each page load picks one approved seed and draws its network.
+   To change which drawings can appear, edit this list:
+---------------------------------------------------------------- */
+var SEEDS = [2, 3, 9, 11, 22, 24];
+
+function buildNet(seed, animate) {
+  var W = 420, H = 680;
+  var a = seed * 2654435761 >>> 0;
+  function r() { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }
+  function dist(p, q) { return Math.hypot(p[0] - q[0], p[1] - q[1]); }
+  function orient(p, q, s) { return (q[0] - p[0]) * (s[1] - p[1]) - (q[1] - p[1]) * (s[0] - p[0]); }
+  function crosses(p, q, s, t) { var d1 = orient(p, q, s), d2 = orient(p, q, t), d3 = orient(s, t, p), d4 = orient(s, t, q); return d1 * d2 < 0 && d3 * d4 < 0; }
+  function segDist(p, s, t) { var dx = t[0] - s[0], dy = t[1] - s[1], L = dx * dx + dy * dy; var u = L ? Math.max(0, Math.min(1, ((p[0] - s[0]) * dx + (p[1] - s[1]) * dy) / L)) : 0; return Math.hypot(p[0] - s[0] - u * dx, p[1] - s[1] - u * dy); }
+  function angDiff(x, y) { var d = Math.abs(x - y) % (2 * Math.PI); return d > Math.PI ? 2 * Math.PI - d : d; }
+  function shuffle(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
+
+  // hubs
+  var nH = 5 + Math.floor(r() * 4), hubs = [], minD = 150, tries = 0;
+  while (hubs.length < nH && tries < 2000) {
+    tries++; if (tries % 400 === 0) minD -= 15;
+    var p = [60 + r() * (W - 120), 70 + r() * (H - 140)];
+    if (hubs.every(function (h) { return dist(h, p) >= minD; })) hubs.push(p);
+  }
+  nH = hubs.length;
+
+  // links: spanning tree, then 1-2 extra short links
+  var links = [], inTree = [0];
+  while (inTree.length < nH) {
+    var best = null;
+    for (var i = 0; i < inTree.length; i++) for (var j = 0; j < nH; j++) {
+      if (inTree.indexOf(j) >= 0) continue;
+      var d = dist(hubs[inTree[i]], hubs[j]);
+      if (!best || d < best[2]) best = [inTree[i], j, d];
+    }
+    links.push([best[0], best[1]]); inTree.push(best[1]);
+  }
+  var linked = function (x, y) { return links.some(function (l) { return (l[0] === x && l[1] === y) || (l[0] === y && l[1] === x); }); };
+  var segOf = function (l) { return [hubs[l[0]], hubs[l[1]]]; };
+  var cands = [];
+  for (var x = 0; x < nH; x++) for (var y = x + 1; y < nH; y++) if (!linked(x, y) && dist(hubs[x], hubs[y]) < 300) cands.push([x, y]);
+  shuffle(cands);
+  var extra = 1 + Math.floor(r() * 2);
+  for (var c = 0; c < cands.length && extra > 0; c++) {
+    var s = segOf(cands[c]);
+    var ok = links.every(function (l) { var t = segOf(l); return !crosses(s[0], s[1], t[0], t[1]); }) &&
+      hubs.every(function (h, k) { return k === cands[c][0] || k === cands[c][1] || segDist(h, s[0], s[1]) > 30; });
+    if (ok) { links.push(cands[c]); extra--; }
+  }
+
+  // stations: uneven counts
+  var pool = shuffle([1, 2, 3, 4, 5, 6, 7, 8, 2, 3, 5]);
+  var spokes = [], allPts = hubs.slice();
+  for (var h = 0; h < nH; h++) {
+    var hub = hubs[h], want = pool[h % pool.length], got = [];
+    var linkAngs = links.filter(function (l) { return l[0] === h || l[1] === h; }).map(function (l) { var o = hubs[l[0] === h ? l[1] : l[0]]; return Math.atan2(o[1] - hub[1], o[0] - hub[0]); });
+    for (var k = 0; k < want; k++) {
+      for (var tr = 0; tr < 90; tr++) {
+        var ang = r() * Math.PI * 2, len = 36 + r() * 58 + (r() < 0.2 ? 30 : 0);
+        var q = [hub[0] + Math.cos(ang) * len, hub[1] + Math.sin(ang) * len];
+        if (q[0] < 16 || q[0] > W - 16 || q[1] < 16 || q[1] > H - 16) continue;
+        if (linkAngs.some(function (la) { return angDiff(la, ang) < 0.4; })) continue;
+        if (got.some(function (g) { return angDiff(g, ang) < 0.32; })) continue;
+        if (allPts.some(function (pt) { return pt !== hub && dist(pt, q) < 24; })) continue;
+        if (links.some(function (l) { var t = segOf(l); return segDist(q, t[0], t[1]) < 18 || crosses(hub, q, t[0], t[1]); })) continue;
+        if (spokes.some(function (sp) { return crosses(hub, q, sp.from, sp.to); })) continue;
+        got.push(ang); allPts.push(q); spokes.push({ hub: h, from: hub, to: q });
+        break;
+      }
+    }
+  }
+
+  // drawing order: hubs + links first (walking outward), then stations hub by hub
+  var ev = [], t = 0.4, seen = [], drawn = [];
+  var start = Math.floor(r() * nH), queue = [start];
+  seen[start] = true; ev.push({ k: 'hub', h: start, t: t }); t += 0.25;
+  while (queue.length) {
+    var cur = queue.shift();
+    links.forEach(function (l, li) {
+      if (drawn[li] || (l[0] !== cur && l[1] !== cur)) return;
+      var other = l[0] === cur ? l[1] : l[0];
+      drawn[li] = true;
+      ev.push({ k: 'line', p: hubs[cur], q: hubs[other], t: t, d: 0.65 }); t += 0.55;
+      if (!seen[other]) { seen[other] = true; ev.push({ k: 'hub', h: other, t: t }); t += 0.25; queue.push(other); }
+    });
+  }
+  shuffle(hubs.map(function (_, i) { return i; })).forEach(function (h) {
+    spokes.filter(function (sp) { return sp.hub === h; }).forEach(function (sp) {
+      ev.push({ k: 'line', p: sp.from, q: sp.to, t: t, d: 0.26, station: true }); t += 0.2;
+    });
+  });
+  var T = t + 5 + 1.4;
+  var kt = function (x) { return Math.max(0.001, Math.min(0.999, x / T)).toFixed(4); };
+  var R = function (v) { return Math.round(v * 10) / 10; };
+  var lines = [], dots = [], rings = [], hubDots = [];
+  ev.forEach(function (e) {
+    if (e.k === 'hub') {
+      var hp = hubs[e.h];
+      hubDots.push({ x: R(hp[0]), y: R(hp[1]), r: 9, op: animate ? 0 : 1, values: animate ? '0;0;1;1' : '1;1', times: animate ? '0;' + kt(e.t) + ';' + kt(e.t + 0.12) + ';1' : '0;1' });
+      rings.push({ x: R(hp[0]), y: R(hp[1]), off: animate ? 1 : 0, values: animate ? '1;1;0;0' : '0;0', times: animate ? '0;' + kt(e.t + 0.1) + ';' + kt(e.t + 0.55) + ';1' : '0;1' });
+    } else {
+      lines.push({ x1: R(e.p[0]), y1: R(e.p[1]), x2: R(e.q[0]), y2: R(e.q[1]), off: animate ? 1 : 0, values: animate ? '1;1;0;0' : '0;0', times: animate ? '0;' + kt(e.t) + ';' + kt(e.t + e.d) + ';1' : '0;1' });
+      if (e.station) dots.push({ x: R(e.q[0]), y: R(e.q[1]), r: 6.5, op: animate ? 0 : 1, values: animate ? '0;0;1;1' : '1;1', times: animate ? '0;' + kt(e.t + e.d) + ';' + kt(e.t + e.d + 0.08) + ';1' : '0;1' });
+    }
+  });
+  return {
+    rot: R(-5 + r() * 7),
+    dur: R(T) + 's',
+    fadeValues: animate ? '1;1;0;0' : '1;1',
+    fadeTimes: animate ? '0;' + ((T - 1.4) / T).toFixed(4) + ';' + ((T - 0.4) / T).toFixed(4) + ';1' : '0;1',
+    lines: lines, dots: dots.concat(hubDots), rings: rings
+  };
+}
+
+(function () {
+  var svg = document.getElementById('net');
+  if (!svg) return;
+  var NS = 'http://www.w3.org/2000/svg';
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var seed = SEEDS[Math.floor(Math.random() * SEEDS.length)];
+  var n = buildNet(seed, !reduced);
+
+  function el(tag, attrs, parent) {
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function anim(parent, attr, values, times) {
+    el('animate', { attributeName: attr, values: values, keyTimes: times, dur: n.dur, repeatCount: 'indefinite' }, parent);
+  }
+
+  svg.style.transform = 'rotate(' + n.rot + 'deg)';
+  var defs = el('defs', {}, svg);
+  [['penA', 0.03, 3, 6], ['penB', 0.04, 11, 7]].forEach(function (f) {
+    var filt = el('filter', { id: f[0], x: '-5%', y: '-5%', width: '110%', height: '110%' }, defs);
+    el('feTurbulence', { type: 'fractalNoise', baseFrequency: f[1], numOctaves: 2, seed: f[2], result: 'n' }, filt);
+    el('feDisplacementMap', { 'in': 'SourceGraphic', in2: 'n', scale: f[3], xChannelSelector: 'R', yChannelSelector: 'G' }, filt);
+  });
+
+  var all = el('g', {}, svg);
+  anim(all, 'opacity', n.fadeValues, n.fadeTimes);
+
+  var gl = el('g', { filter: 'url(#penA)', stroke: '#2558B8', 'stroke-width': 2.4, 'stroke-linecap': 'round', fill: 'none' }, all);
+  n.lines.forEach(function (l) {
+    var line = el('line', { x1: l.x1, y1: l.y1, x2: l.x2, y2: l.y2, pathLength: 1, 'stroke-dasharray': '1 2', 'stroke-dashoffset': l.off }, gl);
+    anim(line, 'stroke-dashoffset', l.values, l.times);
+  });
+
+  var gd = el('g', { filter: 'url(#penA)', fill: '#2558B8' }, all);
+  n.dots.forEach(function (d) {
+    var c = el('circle', { cx: d.x, cy: d.y, r: d.r, opacity: d.op }, gd);
+    anim(c, 'opacity', d.values, d.times);
+  });
+
+  var gr = el('g', { filter: 'url(#penB)', stroke: '#2558B8', 'stroke-width': 1.5, 'stroke-linecap': 'round', fill: 'none', opacity: 0.75, transform: 'translate(1.2 1)' }, all);
+  n.rings.forEach(function (g) {
+    var c = el('circle', { cx: g.x, cy: g.y, r: 12, pathLength: 1, 'stroke-dasharray': '1 2', 'stroke-dashoffset': g.off }, gr);
+    anim(c, 'stroke-dashoffset', g.values, g.times);
+  });
+})();
+</script>
+</body>
+</html>
